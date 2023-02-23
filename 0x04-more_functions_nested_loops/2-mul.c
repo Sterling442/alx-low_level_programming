@@ -5,9 +5,9 @@
  * @x: as integer one
  * @y: as integer two
  * Return: The result
- */ 
+ */
 
 int mul(int x, int y)
 {
-	return(x * y);
+	return (x * y);
 }

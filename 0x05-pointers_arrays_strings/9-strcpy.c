@@ -1,36 +1,20 @@
 #include "main.h"
 
 /**
- * _atoi - convert string pointed by src to buffer pointed by dest
- * @s: Pointer to convert
- * Return: integer
+ * _strcpy - This function copies a string
+ * @dest: Destination
+ * @src: Source
+ * Return: Pointer to dest
  */
 
-int _atoi(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
+	int i;
 
-	while (s[c])
+	for (i = 0; src[i] != \'0'; i++)
 	{
-	if (s[c] == 45)
-	{
-	min *= -1;
+	dest[i] = src[i];
 	}
-	while (s[c] >= 48 && s[c] <= 57)
-	{
-	isi = 1;
-	ni = (ni * 10) + (s[c] - '0');
-	c++;
-	}
-	if (isi == 1)
-	{
-	break;
-	}
-	c++;
-	}
-	ni *= min;
-	return (ni);
+	dest[i++] = '\0';
+	return (dest);
 }

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string - This function capitalizes all word of a string
+ * cap_string - This function capitalizes all words of a string
  * @str: String for testing
  * Return: Results
  */
@@ -31,5 +31,6 @@ char *cap_string(char *str)
 		str[index] -= 32;
 		index++;
 	}
+
 	return (str);
 }

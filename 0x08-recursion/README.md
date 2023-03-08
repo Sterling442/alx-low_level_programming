@@ -10,3 +10,8 @@
 - 6-is_prime_number.c (Task 6)
 
 ***main.h is also included as header file for this project***
+
+## OPTIONAL TASKS
+
+- 100-is_palindrome.c (Task 7)
+- 101-wildcomp.c (Task 8)
